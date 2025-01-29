@@ -1,0 +1,141 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+p,
+li {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* NavBar */
+.navbar-light .navbar-brand {
+  min-width: 220px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+.navbar-brand img {
+  height: 60px;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+  border-radius: 5px;
+  transform: translateY(-4px); /* Efecto de salto */
+  transition: transform 0.5s ease; /* Suaviza el salto */
+}
+
+
+
+
+/* Animación Imagenes*/
+
+.imagen {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+
+.imagen:hover {
+  transform: scale(1.03);
+  opacity: 0.9; 
+}
+
+
+/* Proyecto */
+.background-proyects {
+  background-color: rgb(237, 240, 240);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 15px;
+}
+
+.img-fixed {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+/* Carrusel Index */
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+
+.carousel img.d-none {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.carousel img.d-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* Botón */
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none; 
+  background-color: #007BFF; 
+  color: white; 
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /
+}
+ 
+#backToTopBtn:hover {
+  background-color: #0056b3; 
+}
